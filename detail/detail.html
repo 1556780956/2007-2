@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			/* 详情样式 */
+			.detail_nav{ 
+				width: 1000px;height: 40px;
+				border: 1px solid #e7e7e7;
+				background:#fff;
+				font-size: 14px;
+				margin:0 auto;
+				border-bottom: 3px solid #000;
+			}
+			.detail_nav>ul{
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+			}
+			.detail_nav>ul>li{
+				flex: 0 0 10%;
+				line-height: 40px;
+				list-style-type: none;
+				border-right:1px solid #e7e7e7;
+				border-bottom: 3px solid #000;
+				text-align: center;
+			}
+			.detail_nav>ul>li>a{
+				text-decoration: none;
+				color: #333;
+			}
+			.detail_nav>ul>li:first-child{
+				border-bottom: 3px solid #f10180;
+			}
+			.detail_nav>ul>li:first-child>a{
+				color: #F10180;
+			}
+			.detail_nav>ul>li:hover{
+				border-bottom: 3px solid #f10180;
+			}
+			.detail_nav>ul>li>a:hover{
+				color: #F10180;
+			}
+			/* 商品参数 */
+			.detail{
+				width: 1000px;height: 37px;
+				margin:20px auto;
+			}
+			.img1{
+				width:13px ;height: 13px;
+				background: url(img/detail-sprites.png) no-repeat -275px -233px ;
+				margin-top: 10px;
+			}
+
+			.detail>div:first-child,.image>div:first-child{
+				display: flex;
+				justify-content: left;
+			}
+			.detail>div:nth-child(2),.image>div:nth-child(2){
+				width:1000px ;height: 7px;
+				background-image: url(img/detial_line-xiegang.png);
+				margin-top: 5px;
+			}
+			.c1{
+				font-size: 20px;
+				color: #F10180;
+				margin-left: 8px;
+				font-family: "微软雅黑";
+			}
+			.c2{
+				font-size: 20px;
+				margin-left: 9px;
+				color: #999;
+				font-family: "微软雅黑";
+			}
+			/* 商品参数表格样式 */
+			.detail_tab{
+				width: 1000px;height: 180px;
+				font-size: 14px;
+				border-color:#f5f5f5;
+				border-top: 1px solid #ededed;
+				border-bottom: 1px solid #ededed;
+				border-left: 1px solid #ededed;
+				margin-top: 20px;
+			
+			}
+			.detail_tab th{
+				width:150px ;height: 42px;
+				text-align:right;
+				color: #666;
+				background-color: #f5f5f5;
+				border-right: 1px solid #ededed;
+
+			}
+			.detail_tab td{
+				width:350px ;height: 42px;
+				text-align:left;
+				color: #999;
+				border-bottom: 1px solid #ededed;
+				padding-left: 15px;
+				border-right: 1px solid #ededed;
+			}
+			.image{
+				margin-top: 15px;
+			}
+			.imgs>img{width: 1000px;}
+			#aboutAs>div:first-child{
+				width: 1000px;
+				background-color: #eae8eb;
+				font-size: 0.875rem;
+				line-height: 40px;
+				color: #333;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		<br>
+		<!-- 详情 -->
+		<div>
+			<!-- 详情导航 -->
+			<div class="detail_nav">
+				<ul>
+					<li ><a href="#detail">规格参数</a></li>
+					<li><a href="#image">商品展示</a></li>
+					<li><a href="#aboutAs">关于我们</a></li>
+				</ul>
+			</div>
+
+			<!-- 商品参数 -->
+			<div class="detail">
+				<div id="detail">
+					<div class="img1"></div>
+					<div><span class="c1">商品参数</span><span class="c2">DETAIL</span></div>
+				</div>
+				<div></div>
+				<table class="detail_tab"  cellspacing="1" >
+					<tr>
+						<th>处理器：</th>
+						<td >AMDA8</td>
+						<th>硬盘容量：</th>
+						<td >256GB</td>
+					</tr>
+					<tr>
+						<th>内存容量：</th>
+						<td>8G</td>
+						<th>显卡：</th>
+						<td>集成显卡</td>
+					</tr>
+					<tr>
+						<th>显示器尺寸：</th>
+						<td>23-24英寸</td>
+						<th>操作系统：</th>
+						<td>Win7系统</td>
+					</tr>
+					<tr>
+						<th>电信设备进网许可证编号：</th>
+						<td style="border-bottom: 0;">4358093279378573489</td>
+						<th>售后服务：</th>
+						<td style="border-bottom: 0;">三年保修</td>
+					</tr>
+
+				</table>
+				<!-- 商品展示IMAGE -->
+				<div class="image" id="image">
+					<div >
+						<div class="img1"></div>
+						<div><span class="c1">商品展示</span><span class="c2">IMAGE</span></div>
+					</div>
+					<div></div>
+				</div>
+				<div class="imgs">
+					<img src="img/detail/pg0101.jpg" >
+					<img src="img/detail/pg0102.jpg" >
+					<img src="img/detail/pg0103.jpg" >
+					<img src="img/detail/pg0104.jpg" >
+					<img src="img/detail/pg0105.jpg" >
+					<img src="img/detail/pg0105.jpg" >
+				</div>
+				<!-- 关于我们 -->
+				<div id="aboutAs">
+					<div>&nbsp;&nbsp;关于我们</div>
+					<div >
+						<ul>
+							<li><img src="img/aboutus.png" ></li>
+							<li><img src="img/aboutus.png" ></li>
+							<li><img src="img/aboutus.png" ></li>
+							<li><img src="img/aboutus.png" ></li>
+
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
